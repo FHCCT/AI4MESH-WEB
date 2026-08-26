@@ -1438,7 +1438,8 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
 /* Shared page shell: floating navigation, normal-flow visuals, and a three-column desktop layout. */
 .global-logo {
-  width: 100%;
+  width: min(1480px, calc(100% - 48px));
+  margin: 24px auto 0;
   padding: 0;
   border-bottom: 1px solid #ccd5df;
   background: #fff;
@@ -1624,6 +1625,11 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 }
 
 @media (max-width: 820px) {
+  .global-logo {
+    width: 100%;
+    margin-top: 0;
+  }
+
   body {
     padding-left: 0;
   }
