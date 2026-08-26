@@ -1438,7 +1438,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
 /* Shared page shell: floating navigation, normal-flow visuals, and a three-column desktop layout. */
 .global-logo {
-  width: min(1628px, calc(100% - 48px));
+  width: min(1800px, calc(100% - 48px));
   margin: 24px auto 0;
   padding: 0;
   border-bottom: 1px solid #ccd5df;
@@ -1464,9 +1464,9 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .site-layout {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) 320px;
+    grid-template-columns: 220px minmax(0, 1fr) 260px;
     gap: 24px;
-    width: min(1628px, calc(100% - 48px));
+    width: min(1800px, calc(100% - 48px));
     margin: 24px auto 0;
     align-items: start;
   }
@@ -1576,6 +1576,10 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     width: 100%;
     transform: none;
     box-shadow: none;
+  }
+
+  .hero-subtitle {
+    white-space: nowrap;
   }
 
   .hero-band,
