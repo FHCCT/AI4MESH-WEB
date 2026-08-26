@@ -3,11 +3,6 @@
 {% assign carousel_slides = carousel.slides | where: "enabled", true %}
 
 <div class="visual-stack">
-  <div class="logo-strip" aria-label="Voronoi and Delaunay logo">
-    <object data="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}" type="application/pdf" title="Voronoi and Delaunay logo">
-      <a href="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}">View the logo PDF</a>
-    </object>
-  </div>
   <section class="hero-band" aria-labelledby="workshop-title">
     <div class="hero-stage">
       <section class="photo-carousel hero-carousel" data-carousel aria-label="Dalian city photographs" aria-roledescription="carousel" style="--carousel-transition-duration: {{ carousel.transition_duration | default: 600 }}ms;">
