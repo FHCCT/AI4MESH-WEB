@@ -1464,7 +1464,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .site-layout {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) 250px;
+    grid-template-columns: 220px minmax(0, 1fr) 320px;
     gap: 24px;
     width: min(1480px, calc(100% - 48px));
     margin: 24px auto 0;

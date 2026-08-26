@@ -11,12 +11,13 @@
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
           <li class="nav-item"><a class="{% if page.nav_key == 'home' %}is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'committees' %}is-active{% endif %}" href="{{ '/committees/' | relative_url }}">Committees</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'speakers' %}is-active{% endif %}" href="{{ '/speakers/' | relative_url }}">Speakers</a></li>
           <li class="nav-item"><a class="{% if page.nav_key == 'topics' %}is-active{% endif %}" href="{{ '/topics/' | relative_url }}">Topics</a></li>
           <li class="nav-item"><a class="{% if page.nav_key == 'program' %}is-active{% endif %}" href="{{ '/program/' | relative_url }}">Program</a></li>
           <li class="nav-item"><a class="{% if page.nav_key == 'registration' %}is-active{% endif %}" href="{{ '/registration/' | relative_url }}">Registration</a></li>
           <li class="nav-item"><a class="{% if page.nav_key == 'venue' %}is-active{% endif %}" href="{{ '/venue/' | relative_url }}">Venue &amp; Travel</a></li>
           <li class="nav-item"><a class="{% if page.nav_key == 'contact' %}is-active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a></li>
-          <li class="nav-item"><a class="{% if page.nav_key == 'committees' %}is-active{% endif %}" href="{{ '/committees/' | relative_url }}">Committees</a></li>
         </ul>
       </nav>
       <form class="site-search" role="search" data-site-search>
