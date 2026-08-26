@@ -1,67 +1,32 @@
 <header class="site-header" data-site-header>
   <div class="top-inner">
-    <nav class="top-nav" aria-label="Primary navigation">
-      <a class="site-brand" href="{{ '/' | relative_url }}#home" aria-label="AI4Mesh home" data-home-brand>AI4Mesh</a>
-
+    <div class="site-brand-row">
+      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="AI4Mesh home" data-home-brand>AI4Mesh</a>
       <button class="nav-toggle" type="button" aria-label="Toggle conference menu" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
         <span class="nav-toggle-label">Menu</span>
         <span class="nav-toggle-icon" aria-hidden="true">☰</span>
       </button>
-
-      <div class="nav-content" id="primary-menu" data-nav-menu>
+    </div>
+    <div class="nav-content" id="primary-menu" data-nav-menu>
+      <nav aria-label="Primary navigation">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#about" data-section-link>About</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#objectives" data-section-link>Objectives</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#topics" data-section-link>Topics</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#program" data-section-link>Program</a>
-          </li>
-
-          <li class="nav-item nav-group" data-nav-group>
-            <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="registration-menu" data-nav-group-toggle>
-              Registration <span aria-hidden="true">▾</span>
-            </button>
-            <ul class="nav-submenu" id="registration-menu">
-              <li><a href="{{ '/' | relative_url }}#registration" data-section-link>Registration</a></li>
-              <li><a href="{{ '/' | relative_url }}#important-dates" data-section-link>Important Dates</a></li>
-              <li><a href="{{ '/' | relative_url }}#visa" data-section-link>Visa Information</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#venue" data-section-link>Venue &amp; Travel</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#contact" data-section-link>Contact</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ '/' | relative_url }}#committee" data-section-link>Committees</a>
-          </li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'home' %}is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'topics' %}is-active{% endif %}" href="{{ '/topics/' | relative_url }}">Topics</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'program' %}is-active{% endif %}" href="{{ '/program/' | relative_url }}">Program</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'registration' %}is-active{% endif %}" href="{{ '/registration/' | relative_url }}">Registration</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'venue' %}is-active{% endif %}" href="{{ '/venue/' | relative_url }}">Venue &amp; Travel</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'contact' %}is-active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li class="nav-item"><a class="{% if page.nav_key == 'committees' %}is-active{% endif %}" href="{{ '/committees/' | relative_url }}">Committees</a></li>
         </ul>
-
-        <form class="site-search" role="search" data-site-search>
-          <label class="search-label" for="site-search-input">Search this page</label>
-          <input id="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off" data-site-search-input>
-          <button type="submit" aria-label="Search this page">
-            <svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false">
-              <circle cx="11" cy="11" r="7"></circle>
-              <path d="m16.2 16.2 4.3 4.3"></path>
-            </svg>
-          </button>
-          <span class="search-status" data-site-search-status aria-live="polite"></span>
-        </form>
-      </div>
-    </nav>
+      </nav>
+      <form class="site-search" role="search" data-site-search>
+        <label class="search-label" for="site-search-input">Search this page</label>
+        <input id="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off" data-site-search-input>
+        <button type="submit" aria-label="Search this page">
+          <svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"></circle><path d="m16.2 16.2 4.3 4.3"></path></svg>
+        </button>
+        <span class="search-status" data-site-search-status aria-live="polite"></span>
+      </form>
+    </div>
   </div>
 </header>

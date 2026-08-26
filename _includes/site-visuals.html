@@ -1,0 +1,37 @@
+{% assign conference = site.data.conference %}
+{% assign carousel = site.data.carousel %}
+{% assign carousel_slides = carousel.slides | where: "enabled", true %}
+
+<div class="visual-stack">
+  <div class="logo-strip" aria-label="Voronoi and Delaunay logo">
+    <object data="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}" type="application/pdf" title="Voronoi and Delaunay logo">
+      <a href="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}">View the logo PDF</a>
+    </object>
+  </div>
+  <div class="top-mountain-banner" role="img" aria-label="Snow-covered mountain banner">
+    <img src="{{ '/assets/images/carousel/4.jpg' | relative_url }}" alt="Snow-covered mountain" loading="eager">
+  </div>
+  <section class="hero-band" aria-labelledby="workshop-title">
+    <div class="hero-stage">
+      <section class="photo-carousel hero-carousel" data-carousel aria-label="Dalian city photographs" aria-roledescription="carousel" style="--carousel-transition-duration: {{ carousel.transition_duration | default: 600 }}ms;">
+        <div class="carousel-viewport"><div class="carousel-track" data-carousel-track>
+          {% for slide in carousel_slides %}
+            <figure class="carousel-slide{% if forloop.first %} is-active{% endif %}" data-carousel-slide aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" style="--slide-position: {{ slide.position | default: 'center center' }};"><img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | escape }}" width="{{ slide.width }}" height="{{ slide.height }}"{% if forloop.first %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}></figure>
+          {% endfor %}
+        </div></div>
+        <div class="carousel-controls">
+          <button class="carousel-arrow carousel-prev" type="button" data-carousel-prev aria-label="Show previous slide"><span aria-hidden="true">‹</span></button>
+          <div class="carousel-pagination" aria-label="Choose a slide">{% for slide in carousel_slides %}<button{% if forloop.first %} class="is-active"{% endif %} type="button" data-carousel-dot="{{ forloop.index0 }}" aria-label="Show slide {{ forloop.index }}: {{ slide.label | default: slide.alt | escape }}"{% if forloop.first %} aria-current="true"{% endif %}></button>{% endfor %}</div>
+          <button class="carousel-arrow carousel-next" type="button" data-carousel-next aria-label="Show next slide"><span aria-hidden="true">›</span></button>
+        </div>
+      </section>
+      <div class="hero-info-card">
+        <p class="hero-edition">{{ conference.title }}</p>
+        <p class="hero-kicker">International Workshop on</p>
+        <h1 id="workshop-title">Geometry and Topology for AI-Driven<br> Mesh Generation and Simulations</h1>
+        <p class="hero-subtitle">{{ conference.subtitle }}</p>
+        <dl class="hero-facts"><div><dt>Date</dt><dd>{{ conference.date_display }}</dd></div><div><dt>Venue</dt><dd>{{ conference.venue.name }}</dd></div><div><dt>Location</dt><dd>{{ conference.city }}</dd></div></dl>
+      </div>
+    </div>
+  </section>
+</div>
