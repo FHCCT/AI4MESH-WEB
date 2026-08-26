@@ -1574,12 +1574,15 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-info-card {
     position: static;
     width: 100%;
+    min-width: 0;
+    overflow: visible;
     transform: none;
     box-shadow: none;
   }
 
   .hero-subtitle {
-    white-space: nowrap;
+    display: block;
+    white-space: nowrap !important;
   }
 
   .hero-band,
