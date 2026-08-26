@@ -1,0 +1,124 @@
+title: "AI4Mesh 2026"
+full_title: "International Workshop on Geometry and Topology for AI-Driven Mesh Generation and Simulations"
+subtitle: "In honor of the fundamental contributions of Voronoi and Delaunay"
+date_display: "29–31 October 2026"
+date_start_display: "29 October 2026"
+date_day_range: "29–31"
+date_month_year: "October 2026"
+date_start_day: "29"
+date_end_day: "31"
+date_iso_start: "2026-10-29"
+date_iso_end: "2026-10-31"
+city: "Dalian, China"
+
+objectives:
+  - >-
+    This workshop aims to establish an international platform for discussing the
+    foundations of mesh generation theory and its applications in scientific,
+    engineering, and industrial simulation, with a special focus on AI-driven
+    meshing technologies and simulation methodologies. A distinctive theme of
+    this workshop is the recognition and celebration of the fundamental
+    contributions of Georgy Feodosyevich Voronoy (1868–1908) and Boris
+    Nikolayevich Delone (1890–1980), whose work laid the geometric and
+    topological foundations on which modern mesh generation and numerical
+    simulation methods continue to build.
+  - >-
+    The workshop brings together researchers and industry practitioners to
+    exchange ideas on core algorithmic developments, practical implementation
+    challenges, and emerging trends across structured, unstructured, hybrid,
+    adaptive, and high-order meshing paradigms.
+  - >-
+    Particular emphasis is placed on both application-driven and AI-driven
+    meshing problems arising in discrete and differential geometry,
+    computational geometry, computational topology, computational fluid
+    dynamics, structural analysis, computational electromagnetics, Multiphysics
+    simulation, biomedical modeling, and industrial CAE workflows. By bridging
+    theoretical innovation with real-world simulation demands, this workshop
+    seeks to identify critical research frontiers, facilitate vibrant technical
+    exchange, and foster enduring international collaboration within the
+    meshing community.
+
+affiliations:
+  - label: "Conference affiliated with"
+    name: "Dalian University of Technology"
+    location: "China"
+    status: "confirmed"
+  - label: "Sponsored by"
+    name: "To be announced"
+    location: "Sponsor information has not yet been provided."
+    status: "pending"
+
+chairs:
+  - name: "Prof. Zhongxuan Luo"
+    initials: "ZL"
+    institution: "Dalian University of Technology"
+    location: "Dalian"
+  - name: "Prof. Na Lei"
+    initials: "NL"
+    institution: "Dalian University of Technology"
+    location: "Dalian"
+  - name: "Prof. Jianjun Chen"
+    initials: "JC"
+    institution: "Zhejiang University"
+    location: "Hangzhou"
+  - name: "Prof. Hang Si"
+    initials: "HS"
+    institution: "Dalian University of Technology"
+    location: "Dalian"
+  - name: "Prof. Vladimir Garanzha"
+    initials: "VG"
+    institution: "Russian Academy of Sciences"
+    location: "Moscow, Russia"
+topics:
+  - "AI-Driven Meshing"
+  - "Computational Geometry"
+  - "CFD & Simulation"
+  - "Topology & Discrete Geometry"
+  - "Biomedical Modeling"
+  - "Industrial CAE"
+
+registration:
+  summary: >-
+    Registration for the workshop will be mandatory. Lunch meals and the banquet
+    will be complimentary. Travel expenses are at the participant's own charge.
+  facts:
+    - label: "Attendance"
+      value: "Registration required"
+    - label: "Included"
+      value: "Lunch meals and banquet"
+    - label: "Travel"
+      value: "At the participant’s own charge"
+
+venue:
+  name: "Dalian University of Technology"
+  address: "No.2 Linggong Road, Ganjingzi District, Dalian, Liaoning, China"
+  map_url: "https://www.openstreetmap.org/search?query=Dalian%20University%20of%20Technology%20No.2%20Linggong%20Road"
+
+city_intro:
+  - >-
+    Dalian, known as the “Oriental Pearl” and the “City of Romance,” is a coastal
+    gem in northeastern China where rich culture and stunning nature come
+    together. It’s a top international spot, blending history, art, and modern
+    vibes—perfect for cultural exchange and tourism.
+  - >-
+    October is the best time to visit! The weather is mild, and outdoor spots
+    like Russian Street, Xinghai Square, and Binhai Road (with its amazing Yellow
+    Sea views) shine even brighter. Museums and galleries show off East-West
+    influences, while Lvshun Old Town’s historic buildings and autumn-colored
+    streets feel like stepping into a storybook. Don’t miss the fall foliage at
+    Xijiazi Red Maple Valley or Xijiao National Park, plus local seafood markets
+    and art fairs. Whether you’re exploring history, enjoying nature, or tasting
+    treats, Dalian promises an unforgettable trip!
+
+city_highlights:
+  - "Russian Street"
+  - "Xinghai Square"
+  - "Binhai Road"
+  - "Lvshun Old Town"
+  - "Xijiazi Red Maple Valley"
+  - "Xijiao National Park"
+
+visa: >-
+  The local organizing committee will offer the certification to help you get
+  the visa to attend the conference in Dalian, China. Visa application takes
+  time. Please act early.

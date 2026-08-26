@@ -1,0 +1,26 @@
+transition_duration: 600
+
+slides:
+  - image: "/assets/images/carousel/1.jpg"
+    alt: "Dalian city skyline and bay illuminated at night"
+    label: "Dalian city skyline at night"
+    position: "center center"
+    width: 9531
+    height: 3192
+    enabled: true
+
+  - image: "/assets/images/carousel/2.jpg"
+    alt: "Dalian city boulevard and bridge at dusk"
+    label: "Dalian boulevard at dusk"
+    position: "center 55%"
+    width: 6078
+    height: 2279
+    enabled: true
+
+  - image: "/assets/images/carousel/3.jpg"
+    alt: "Dalian city expressways and skyline at night"
+    label: "Dalian city at night"
+    position: "center center"
+    width: 14438
+    height: 5394
+    enabled: true

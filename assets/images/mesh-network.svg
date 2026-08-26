@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-label="Abstract geometric mesh">
+  <defs>
+    <radialGradient id="background" cx="52%" cy="44%" r="62%">
+      <stop offset="0" stop-color="#2459ad" stop-opacity=".52"/>
+      <stop offset=".52" stop-color="#0f329b" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#06172f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cellA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6fd8eb" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#48d3c5" stop-opacity=".035"/>
+    </linearGradient>
+    <linearGradient id="cellB" x1="1" y1="0" x2="0" y2="1">
+      <stop stop-color="#4b8ed8" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#6fd8eb" stop-opacity=".025"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><circle cx="360" cy="360" r="354"/></clipPath>
+  </defs>
+
+  <circle cx="360" cy="360" r="354" fill="url(#background)"/>
+  <g clip-path="url(#round)">
+    <g fill="none" stroke="#8be5ef" stroke-opacity=".28" stroke-width="1.25">
+      <path d="M-20 121 105 78l105 72-18 119-123 51-92-73Z" fill="url(#cellA)"/>
+      <path d="m105 78 91-95 133 38 35 123-154 6Z" fill="url(#cellB)"/>
+      <path d="m210 150 154-6 67 105-85 103-154-83Z" fill="url(#cellA)"/>
+      <path d="m364 144 88-106 139 54 11 129-171 28Z" fill="url(#cellB)"/>
+      <path d="m591 92 138-30 56 127-64 102-119-70Z" fill="url(#cellA)"/>
+      <path d="m-23 247 92 73 15 132-108 74-91-112Z" fill="url(#cellB)"/>
+      <path d="m69 320 123-51 154 83-29 134-141 42-92-76Z" fill="url(#cellA)"/>
+      <path d="m346 352 85-103 171-28 40 128-101 101-224 36Z" fill="url(#cellB)"/>
+      <path d="m602 221 119 70 62 124-111 73-131-38 101-101Z" fill="url(#cellA)"/>
+      <path d="m-24 526 108-74 92 76-27 141-129 67-85-92Z" fill="url(#cellA)"/>
+      <path d="m176 528 141-42 92 83-58 135-202-35Z" fill="url(#cellB)"/>
+      <path d="m317 486 224-36 38 127-90 116-138 11 58-135Z" fill="url(#cellA)"/>
+      <path d="m541 450 131 38 91 102-74 119-200-16 90-116Z" fill="url(#cellB)"/>
+      <path d="m20 736 129-67 202 35 35 99-218 53Z" fill="url(#cellB)"/>
+      <path d="m351 704 138-11 200 16 22 134-325-40Z" fill="url(#cellA)"/>
+    </g>
+
+    <g fill="none" stroke="#72ddec" stroke-linecap="round">
+      <path d="M69 320 210 150l221 99 171-28 70 267-183 205-313-165Z" stroke-opacity=".48" stroke-width="1.8"/>
+      <path d="M84 452 346 352l195 98-132 119-232-41Z" stroke-opacity=".38" stroke-width="1.4" stroke-dasharray="4 8"/>
+      <path d="M105 78 346 352l143 341M591 92 317 486 149 669" stroke-opacity=".19" stroke-width="1"/>
+    </g>
+
+    <g fill="#8ce8f1">
+      <circle cx="105" cy="78" r="4" fill-opacity=".72"/>
+      <circle cx="210" cy="150" r="5" fill-opacity=".9" filter="url(#glow)"/>
+      <circle cx="364" cy="144" r="3.5" fill-opacity=".66"/>
+      <circle cx="591" cy="92" r="4" fill-opacity=".72"/>
+      <circle cx="69" cy="320" r="4" fill-opacity=".64"/>
+      <circle cx="192" cy="269" r="3" fill-opacity=".54"/>
+      <circle cx="346" cy="352" r="7" fill="#48d3c5" fill-opacity=".95" filter="url(#glow)"/>
+      <circle cx="431" cy="249" r="4" fill-opacity=".74"/>
+      <circle cx="602" cy="221" r="3.5" fill-opacity=".6"/>
+      <circle cx="84" cy="452" r="4" fill-opacity=".6"/>
+      <circle cx="176" cy="528" r="5" fill-opacity=".82"/>
+      <circle cx="317" cy="486" r="4" fill-opacity=".65"/>
+      <circle cx="541" cy="450" r="5" fill-opacity=".84"/>
+      <circle cx="672" cy="488" r="3.5" fill-opacity=".62"/>
+      <circle cx="149" cy="669" r="4" fill-opacity=".62"/>
+      <circle cx="351" cy="704" r="4" fill-opacity=".66"/>
+      <circle cx="409" cy="569" r="5" fill-opacity=".84"/>
+      <circle cx="489" cy="693" r="4" fill-opacity=".62"/>
+      <circle cx="579" cy="577" r="4" fill-opacity=".7"/>
+    </g>
+
+    <g fill="#fff" fill-opacity=".08">
+      <circle cx="346" cy="352" r="55"/>
+      <circle cx="346" cy="352" r="96" fill="none" stroke="#fff" stroke-opacity=".07"/>
+      <circle cx="346" cy="352" r="143" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </g>
+  </g>
+  <circle cx="360" cy="360" r="353" fill="none" stroke="#fff" stroke-opacity=".1"/>
+</svg>
+

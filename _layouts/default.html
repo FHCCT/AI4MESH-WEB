@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f329b">
+    <meta name="color-scheme" content="light">
+    <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.short_title | escape }}</title>
+    <meta name="description" content="{{ site.description | strip_newlines | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title | escape }}">
+    <meta property="og:description" content="{{ site.description | strip_newlines | escape }}">
+    <meta property="og:locale" content="en_US">
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": {{ site.data.conference.title | jsonify }},
+        "alternateName": {{ site.data.conference.full_title | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "startDate": {{ site.data.conference.date_iso_start | jsonify }},
+        "endDate": {{ site.data.conference.date_iso_end | jsonify }},
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": {{ site.data.conference.venue.name | jsonify }},
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No.2 Linggong Road",
+            "addressLocality": "Dalian",
+            "addressRegion": "Liaoning",
+            "addressCountry": "CN"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Dalian University of Technology"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    {% include header.html %}
+    <aside class="fixed-pdf" aria-label="Voronoi and Delaunay logo">
+      <object data="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}" type="application/pdf" title="Voronoi and Delaunay logo">
+        <a href="{{ '/assets/images/carousel/delone_logo.pdf' | relative_url }}">View the logo PDF</a>
+      </object>
+    </aside>
+    <aside class="right-image" aria-label="Dalian image">
+      <img src="{{ '/assets/images/carousel/4.jpg' | relative_url }}" alt="Dalian" loading="lazy">
+    </aside>
+    {{ content }}
+    {% include footer.html %}
+    <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top" title="Back to top" aria-hidden="true" tabindex="-1">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+  </body>
+</html>

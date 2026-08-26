@@ -1,0 +1,198 @@
+---
+title: Home
+---
+
+{% assign conference = site.data.conference %}
+{% assign carousel = site.data.carousel %}
+{% assign carousel_slides = carousel.slides | where: "enabled", true %}
+
+<main id="main-content">
+  <section class="hero-band" id="home" aria-labelledby="workshop-title">
+    <div class="hero-stage">
+      <section class="photo-carousel hero-carousel" data-carousel aria-label="Dalian city photographs" aria-roledescription="carousel" style="--carousel-transition-duration: {{ carousel.transition_duration | default: 600 }}ms;">
+        <div class="carousel-viewport">
+          <div class="carousel-track" data-carousel-track>
+            {% for slide in carousel_slides %}
+              <figure class="carousel-slide{% if forloop.first %} is-active{% endif %}" data-carousel-slide aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" style="--slide-position: {{ slide.position | default: 'center center' }};">
+                <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | escape }}" width="{{ slide.width }}" height="{{ slide.height }}"{% if forloop.first %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}>
+              </figure>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-arrow carousel-prev" type="button" data-carousel-prev aria-label="Show previous slide">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="carousel-pagination" aria-label="Choose a slide">
+            {% for slide in carousel_slides %}
+              <button{% if forloop.first %} class="is-active"{% endif %} type="button" data-carousel-dot="{{ forloop.index0 }}" aria-label="Show slide {{ forloop.index }}: {{ slide.label | default: slide.alt | escape }}"{% if forloop.first %} aria-current="true"{% endif %}></button>
+            {% endfor %}
+          </div>
+          <button class="carousel-arrow carousel-next" type="button" data-carousel-next aria-label="Show next slide">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="hero-info-card">
+        <p class="hero-edition">{{ conference.title }}</p>
+        <p class="hero-kicker">International Workshop on</p>
+        <h1 id="workshop-title">Geometry and Topology for AI-Driven<br> Mesh Generation and Simulations</h1>
+        <p class="hero-subtitle">{{ conference.subtitle }}</p>
+        <dl class="hero-facts">
+          <div>
+            <dt>Date</dt>
+            <dd>{{ conference.date_display }}</dd>
+          </div>
+          <div>
+            <dt>Venue</dt>
+            <dd>{{ conference.venue.name }}</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>{{ conference.city }}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="main-shell">
+    <div class="main-column">
+
+      <section class="content-panel about-intro" id="about" aria-labelledby="about-title">
+        <h2 class="panel-title" id="about-title">About</h2>
+        <div class="panel-body prose">
+          <p>This international workshop brings together researchers and practitioners working at the intersection of geometry, topology, AI-driven mesh generation, and scientific simulation.</p>
+          <p>Explore the workshop objectives and individual topic pages below.</p>
+        </div>
+      </section>
+
+      <section class="content-panel" id="program" aria-labelledby="program-title">
+        <h2 class="panel-title" id="program-title">Program</h2>
+        <div class="panel-body simple-notice">
+          <p>The detailed workshop program will be announced.</p>
+        </div>
+      </section>
+
+      <section class="content-panel" id="registration" aria-labelledby="registration-title">
+        <h2 class="panel-title" id="registration-title">Registration</h2>
+        <div class="panel-body prose">
+          <p>{{ conference.registration.summary }}</p>
+          <dl class="fact-list">
+            {% for fact in conference.registration.facts %}
+              <div>
+                <dt>{{ fact.label }}</dt>
+                <dd>{{ fact.value }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </div>
+      </section>
+
+      <section class="content-panel" id="important-dates" aria-labelledby="dates-title">
+        <h2 class="panel-title" id="dates-title">Important Dates</h2>
+        <div class="panel-body">
+          <dl class="date-list">
+            <div>
+              <dt>Workshop</dt>
+              <dd>{{ conference.date_display }}</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="content-panel" id="visa" aria-labelledby="visa-title">
+        <h2 class="panel-title" id="visa-title">Visa Information</h2>
+        <div class="panel-body prose">
+          <p>{{ conference.visa }}</p>
+        </div>
+      </section>
+
+      <section class="content-panel" id="venue" aria-labelledby="venue-title">
+        <h2 class="panel-title" id="venue-title">Venue &amp; Accommodation</h2>
+        <div class="panel-body prose">
+          <h3>{{ conference.venue.name }}</h3>
+          <p>{{ conference.venue.address }}</p>
+          <p><a class="standard-link" href="{{ conference.venue.map_url }}" target="_blank" rel="noopener noreferrer">View the venue on OpenStreetMap</a></p>
+
+          <h3>About Dalian</h3>
+          {% for paragraph in conference.city_intro %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+
+          <h3>Places of Interest</h3>
+          <ul class="plain-list">
+            {% for place in conference.city_highlights %}
+              <li>{{ place }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-panel" id="objectives" aria-labelledby="objectives-title">
+        <h2 class="panel-title" id="objectives-title">Objectives</h2>
+        <div class="panel-body prose">
+          {% for paragraph in conference.objectives %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+
+          {% for item in conference.affiliations %}
+            <h3>{{ item.label }}</h3>
+            {% if item.status == 'confirmed' %}
+              <p>{{ item.name }}, {{ item.location }}</p>
+            {% else %}
+              <p>To be announced.</p>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="content-panel" id="topics" aria-labelledby="topics-title">
+        <h2 class="panel-title" id="topics-title">Topics</h2>
+        <div class="panel-body">
+          <ul class="topic-list">
+            {% for topic in conference.topics %}
+              <li><a class="topic-link" href="{{ '/topics/' | append: topic | slugify | append: '/' | relative_url }}">{{ topic }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-panel" id="contact" aria-labelledby="contact-title">
+        <h2 class="panel-title" id="contact-title">Contact</h2>
+        <div class="panel-body simple-notice">
+          <p>To be announced.</p>
+        </div>
+      </section>
+
+      <section class="content-panel" id="committee" aria-labelledby="committee-title">
+        <h2 class="panel-title" id="committee-title">Committees</h2>
+        <div class="panel-body">
+          <h3 class="subsection-title">Conference Chairs</h3>
+          <div class="table-wrap">
+            <table class="committee-table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Institution</th>
+                  <th scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for chair in conference.chairs %}
+                  <tr>
+                    <td data-label="Name">{{ chair.name }}</td>
+                    <td data-label="Institution">{{ chair.institution }}</td>
+                    <td data-label="Location">{{ chair.location }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
