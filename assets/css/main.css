@@ -1577,7 +1577,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-info-card {
     position: static;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 500px;
+    grid-template-columns: minmax(0, 1fr) 650px;
     gap: 32px;
     align-items: stretch;
     width: 100%;
@@ -1604,6 +1604,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     align-items: center;
     justify-content: flex-end;
     padding: 16px 0;
+    transform: translateY(-12px);
   }
 
   .hero-mountain img {
