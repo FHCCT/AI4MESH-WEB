@@ -1577,7 +1577,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-info-card {
     position: static;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 550px;
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 38%, 550px);
     gap: 32px;
     align-items: stretch;
     width: 100%;
@@ -1600,7 +1600,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     display: flex;
     min-width: 0;
     min-height: 0;
-    height: 100%;
+    height: auto;
     align-items: center;
     justify-content: flex-end;
     padding: 16px 0;
@@ -1609,7 +1609,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .hero-mountain img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     object-position: right center;
   }
@@ -1751,6 +1751,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     height: auto;
     margin-top: 24px;
     padding: 0;
+    transform: none;
   }
 
   .hero-mountain img {
