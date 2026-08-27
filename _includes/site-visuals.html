@@ -18,11 +18,14 @@
         </div>
       </section>
       <div class="hero-info-card">
-        <p class="hero-edition">{{ conference.title }}</p>
-        <p class="hero-kicker">International Workshop on</p>
-        <h1 id="workshop-title">Geometry and Topology for AI-Driven<br> Mesh Generation and Simulations</h1>
-        <p class="hero-subtitle">{{ conference.subtitle }}</p>
-        <dl class="hero-facts"><div><dt>Date</dt><dd>{{ conference.date_display }}</dd></div><div><dt>Venue</dt><dd>{{ conference.venue.name }}</dd></div><div><dt>Location</dt><dd>{{ conference.city }}</dd></div></dl>
+        <div class="hero-copy">
+          <p class="hero-edition">{{ conference.title }}</p>
+          <p class="hero-kicker">International Workshop on</p>
+          <h1 id="workshop-title">Geometry and Topology for AI-Driven<br> Mesh Generation and Simulations</h1>
+          <p class="hero-subtitle">{{ conference.subtitle }}</p>
+          <dl class="hero-facts"><div><dt>Date</dt><dd>{{ conference.date_display }}</dd></div><div><dt>Venue</dt><dd>{{ conference.venue.name }}</dd></div><div><dt>Location</dt><dd>{{ conference.city }}</dd></div></dl>
+        </div>
+        <div class="hero-mountain" aria-label="Mountain image"><img src="{{ '/assets/images/carousel/4.jpg' | relative_url }}" alt="Snow-covered mountain" loading="lazy"></div>
       </div>
     </div>
   </section>

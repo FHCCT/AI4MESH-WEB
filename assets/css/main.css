@@ -676,12 +676,14 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 .committee-table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .committee-table th,
 .committee-table td {
+  width: 33.3333%;
   padding: 12px 13px;
   border: 1px solid #d6dde4;
   text-align: left;
@@ -1465,7 +1467,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .site-layout {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) 260px;
+    grid-template-columns: 220px minmax(0, 1fr);
     gap: 24px;
     width: min(1800px, calc(100% - 48px));
     margin: 24px auto 0;
@@ -1574,6 +1576,10 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .hero-info-card {
     position: static;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 32px;
+    align-items: center;
     width: 100%;
     min-width: 0;
     overflow: visible;
@@ -1584,6 +1590,24 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-subtitle {
     display: block;
     white-space: nowrap !important;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero-mountain {
+    display: flex;
+    min-width: 0;
+    min-height: 220px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-mountain img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .hero-band,
@@ -1711,10 +1735,21 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .hero-info-card {
     position: relative;
+    display: block;
     bottom: auto;
     left: auto;
     margin: 0;
     transform: none;
+  }
+
+  .hero-mountain {
+    min-height: 0;
+    margin-top: 24px;
+  }
+
+  .hero-mountain img {
+    width: 100%;
+    height: auto;
   }
 
   .main-shell {
