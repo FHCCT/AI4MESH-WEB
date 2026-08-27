@@ -1577,7 +1577,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-info-card {
     position: static;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 400px;
+    grid-template-columns: minmax(0, 1fr) 500px;
     gap: 32px;
     align-items: stretch;
     width: 100%;
