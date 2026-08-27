@@ -10,7 +10,10 @@ nav_key: home
   <div class="panel-body prose">
     <p>This international workshop brings together researchers and practitioners working at the intersection of geometry, topology, AI-driven mesh generation, and scientific simulation.</p>
     <h3>Objectives</h3>
-    {% for paragraph in conference.objectives %}<p>{{ paragraph }}</p>{% endfor %}
+    {% for paragraph in conference.objectives %}
+      {% assign linked_paragraph = paragraph | replace: "Georgy Feodosyevich Voronoy (1868–1908)", '<a class="standard-link" href="https://en.wikipedia.org/wiki/Georgy_Voronoy" target="_blank" rel="noopener noreferrer">Georgy Feodosyevich Voronoy (1868–1908)</a>' | replace: "Boris Nikolayevich Delone (1890–1980)", '<a class="standard-link" href="https://en.wikipedia.org/wiki/Boris_Delaunay" target="_blank" rel="noopener noreferrer">Boris Nikolayevich Delone (1890–1980)</a>' %}
+      <p>{{ linked_paragraph }}</p>
+    {% endfor %}
     {% for item in conference.affiliations %}
       <h3>{{ item.label }}</h3>
       {% if item.status == 'confirmed' %}<p>{{ item.name }}, {{ item.location }}</p>{% else %}<p>To be announced.</p>{% endif %}
