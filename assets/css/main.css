@@ -1606,7 +1606,8 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     height: 100%;
     align-items: center;
     justify-content: flex-end;
-    padding: 16px 0;
+    align-self: start;
+    padding: 0;
     transform: none;
     z-index: 1;
   }
@@ -1667,17 +1668,19 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
 @media (min-width: 821px) and (max-width: 1200px) {
   .hero-info-card {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 32%);
+    gap: 20px;
   }
 
   .hero-subtitle {
-    white-space: normal;
+    white-space: nowrap !important;
   }
 
   .hero-mountain {
-    width: min(42%, 360px);
+    width: 100%;
     height: auto;
-    margin: 24px 0 0 auto;
+    margin: 0;
     padding: 0;
     margin-left: auto;
     transform: none;
@@ -1767,7 +1770,9 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
   .hero-info-card {
     position: relative;
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(110px, 30%);
+    gap: 12px;
     bottom: auto;
     left: auto;
     margin: 0;
@@ -1777,7 +1782,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-mountain {
     min-height: 0;
     height: auto;
-    margin-top: 24px;
+    margin: 0;
     padding: 0;
     transform: none;
   }
