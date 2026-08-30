@@ -72,7 +72,7 @@ chairs:
   - name: "Cheng Guo"
     initials: "CG"
     institution: "Dalian University of Technology"
-    location: "China"
+    location: "Dalian"
 topics:
   - "AI-Driven Meshing"
   - "Computational Geometry"
