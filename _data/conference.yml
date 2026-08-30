@@ -69,6 +69,10 @@ chairs:
     initials: "VG"
     institution: "Russian Academy of Sciences"
     location: "Moscow, Russia"
+  - name: "Cheng Guo"
+    initials: "CG"
+    institution: "Dalian University of Technology"
+    location: "China"
 topics:
   - "AI-Driven Meshing"
   - "Computational Geometry"
