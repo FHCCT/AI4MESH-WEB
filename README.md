@@ -35,9 +35,13 @@ the site works both as a user site and as a project site under `/repository/`.
 
 ## Content updates
 
-Conference facts and page copy live in `_data/conference.yml`. Sponsor,
-speaker, registration-link, accommodation, and contact information remain
-marked as pending because they were not supplied in the source document.
+Conference facts and page copy live in `_data/conference.yml`. Speaker profiles,
+talk titles, abstracts, and resource links live in `_data/speakers.yml`, based on
+`Dalian_2026_Speaker_Directory(1).docx`. The Speakers and Program pages share this
+data. The supplied photos are stored in `assets/images/speakers/`; local source
+file links from the document are not published. Jonathan Shewchuk's title remains
+marked as tentative. Sponsor, registration-link, accommodation, contact, and
+detailed schedule information remain pending.
 
 ### Carousel images
 

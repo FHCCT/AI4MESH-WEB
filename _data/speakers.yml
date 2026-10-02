@@ -1,0 +1,116 @@
+- id: "herbert-edelsbrunner"
+  name: "Herbert Edelsbrunner"
+  institution: "Institute of Science and Technology Austria"
+  profile_url: "https://pub.ista.ac.at/~edels/"
+  profile_label: "Homepage"
+  biography:
+    - "Herbert Edelsbrunner is a professor of mathematics at the Institute of Science and Technology Austria. His research spans computational geometry and computational topology. He previously held academic positions at Graz University of Technology, the University of Illinois at Urbana-Champaign and Duke University. He co-founded Raindrop Geomagic and received the Alan T. Waterman Award in 1991 and the Wittgenstein Award in 2018."
+  photo_url: "https://pub.ista.ac.at/~edels/Gifs/herbert.gif"
+
+- id: "jonathan-richard-shewchuk"
+  name: "Jonathan Richard Shewchuk"
+  institution: "University of California Berkeley"
+  profile_url: "https://people.eecs.berkeley.edu/~jrs/"
+  profile_label: "Homepage"
+  biography:
+    - "Jonathan Richard Shewchuk is a professor of computer science at the University of California, Berkeley. His research includes computational geometry, mesh generation, numerical robustness, surface reconstruction and scientific computing. He earned his doctorate in computer science at Carnegie Mellon University in 1997 and joined Berkeley in 1998. He developed the Triangle mesh generator."
+  talk_title: "Better Sampling Bounds for Restricted Delaunay Triangulations and a Star-Shaped Property for Restricted Voronoi Cells"
+  talk_tentative: true
+  photo_url: "https://people.eecs.berkeley.edu/~jrs/head2.gif"
+
+- id: "nikolay-petrovich-dolbilin"
+  name: "Nikolay Petrovich Dolbilin"
+  institution: "Steklov Mathematical Institute of the Russian Academy of Sciences"
+  profile_url: "https://www.mi-ras.ru/staff/dolbilin_e.html"
+  profile_label: "Homepage"
+  biography:
+    - "Nikolay Dolbilin (b. 1943), Doctor of Sciences and Professor, graduated from Moscow State University in 1965. He joined the Steklov Mathematical Institute in 1966 for postgraduate study under B. Delaunay. Since 1969, he has worked in its Department of Geometry, and since 1984 in the Geometry and Topology department, where he is a Leading Research Fellow."
+    - "His interests are discrete geometry, combinatorial topology, and applications to crystallography and statistical physics. Principal results include the theory of lattice coverings of space by equal balls, the local criteria for regular point systems and isohedral tilings, the local theory of regular systems, and, with coauthors, the first rigorous proof of the celebrated Kac–Ward determinant formula for the partition function of the two-dimensional Ising model."
+    - "In mathematics education and popularization, he served on the Executive Committee of the International Commission on Mathematical Instruction (ICMI, 2003–2006) and the International Programme Committee of ICME-10 (2004). He was an invited speaker at ICME-9 (2000) in Japan and shared a Russian Academy of Sciences gold medal for the popularization of science."
+  talk_title: "Delone Sets: From Local to Global"
+  abstract:
+    - "In the talk, we present the local theory of regular systems, motivated by a fundamental question concerning the origin of crystalline order. This theory was initiated half a century ago by Delone’s geometric school at the Steklov Institute."
+    - "The atomic structure of an ideal crystal is modeled by a Delone set with a crystallographic symmetry group. A remarkable feature is the emergence of this order during crystallization, when atoms are rearranged from a disordered state of a liquid into a highly organized crystal structure."
+    - "Physicists explain this phenomenon as follows. During crystallization, atoms tend to surround themselves with clusters that minimize the internal energy. Clearly, the energy-minimizing clusters around identical atoms should be the same. And finally, the decisive argument (R. Feynman): the repetition of clusters throughout the structure leads to its global symmetry. This argument seemed to be obvious and did not need proof. However, the aperiodic Penrose tilings (1974) and the discovery of quasicrystals by D. Shechtman (1982) showed that the recurrence of clusters in a Delone set does not always lead to a crystallographic symmetry group."
+    - "Any Delone set with crystallographic symmetry is a finite union of regular systems. A regular system is defined as an orbit of a point under a crystallographic group. One of the main goals of the local theory of regular systems is to find local geometric conditions guaranteeing that a Delone set is a regular system."
+    - "Given a Delone set X ⊂ ℝᵈ, x ∈ X, and ρ > 0, a ρ-cluster Cₓ(ρ) at x is the set of all points of X whose distance from x does not exceed ρ. Two clusters Cₓ(ρ) and Cₓ′(ρ) are equivalent if there is an isometry g such that g(x) = x′ and g(Cₓ(ρ)) = Cₓ′(ρ). The regularity radius is the smallest number ρ̂d > 0 such that every Delone set whose ρ̂d-clusters are pairwise equivalent is a regular system."
+    - "We plan to discuss the local criterion for regular systems, which provides an upper bound for ρ̂d; in the plane, ρ̂₂ = 4R, where R is the covering radius; and in 3-space, 6R ≤ ρ̂₃ ≤ 10R."
+  photo_path: "/assets/images/speakers/nikolay-petrovich-dolbilin.jpeg"
+
+- id: "vladimir-anatolyevich-garanzha"
+  name: "Vladimir Anatolyevich Garanzha"
+  institution: "Dorodnicyn Computing Centre and Federal Research Center Computer Science and Control RAS"
+  profile_url: "https://www.mathnet.ru/eng/person53008"
+  profile_label: "Academic profile"
+  biography:
+    - "Vladimir Anatolyevich Garanzha holds a doctorate in physical and mathematical sciences and is a professor of the Russian Academy of Sciences. His published research includes Delaunay and Voronoi meshing, quasi-isometric mappings, mesh deformation and numerical methods for elasticity. His Math-Net profile lists affiliations with the Dorodnicyn Computing Centre and the Federal Research Center Computer Science and Control of the Russian Academy of Sciences."
+
+- id: "marco-attene"
+  name: "Marco Attene"
+  institution: "National Research Council of Italy"
+  profile_url: "https://www.imati.cnr.it/mypage.php?idk=PG-45"
+  profile_label: "Homepage"
+  biography:
+    - "Marco Attene is a research director at the National Research Council of Italy, where he investigates new directions, paradigms and algorithms for 3D geometric modelling, processing and analysis. He regularly publishes high-impact articles in the most prestigious journals in the area (ACM TOG, TVCG, CGF, ...) with thousands of citations, and in 2024 was ranked in the top 2% most influential researchers in all fields of science. His work is regularly presented at all the major computer graphics events including ACM Siggraph and Eurographics, and he is the recipient of the SGP Software Award for his MeshFix software. Marco is an ACM professional member, is vice-president of the Italian Chapter of the Eurographics Association, served as General Chair of the Graphics Replicability Stamp Initiative, and is an associate editor of Wiley Computer Graphics Forum and Elsevier Computers & Graphics."
+  talk_title: "Robust computational geometry"
+  abstract:
+    - "For researchers and practitioners who deal with geometric models, turning a theoretical algorithm into a reliable computer program might become a tricky and sometimes frustrating task. Even when an algorithm is provably correct, its actual implementation might still fail because it approximates real numbers with finite floating point representations. Exact geometric predicates and adaptive precision may help, but the cost in terms of performance loss can be relevant. This talk analyses and discusses how recent results have tackled this fundamental problem. Starting from Shewchuk's seminal work and CGAL approach to robustness, I will show how geometric algorithms can be made robust with virtually no performance penalty. We will see how the concept of \"indirect geometric predicate\" has enabled the development of a whole new family of modern algorithms that resolve long lasting problems within the computational geometry community, including 3D arrangements, mesh boolean operations, cascaded editing and volume meshing."
+  photo_path: "/assets/images/speakers/marco-attene.jpg"
+
+- id: "nancy-hitschfeld-kahler"
+  name: "Nancy Hitschfeld Kahler"
+  institution: "Universidad de Chile"
+  profile_url: "https://users.dcc.uchile.cl/~nancy/"
+  profile_label: "Homepage"
+  biography:
+    - "Nancy Hitschfeld Kahler is a full professor in the Department of Computer Science at Universidad de Chile. She obtained her bachelor’s and master’s degrees there and her doctorate at ETH Zurich in 1993. Her research concerns polygonal and polyhedral meshes, GPU computing, and computational science and engineering."
+  photo_url: "https://users.dcc.uchile.cl/~nancy/sites/default/files/irmaBrunoUsa2017.jpg"
+
+- id: "ying-he"
+  name: "Ying He"
+  institution: "Nanyang Technological University Singapore"
+  profile_url: "https://personal.ntu.edu.sg/yhe/"
+  profile_label: "Homepage"
+  biography:
+    - "Ying He is a Professor in the College of Computing and Data Science at Nanyang Technological University, Singapore. He serves as Director of the Centre for Augmented and Virtual Reality and Programme Co-Director of the MSc in Game Design and Technology. His research spans geometric modeling, digital geometry processing, 3D deep learning, and 3D vision, with recent work focused on reconstruction from point clouds and multi-view images. He has served as General or Program Co-Chair of 10+ international conferences in geometric modeling and computer graphics. He is a Summit Co-Chair of the 4th International Geometry Summit in 2027, the first edition to be held in Asia. The summit will bring together SPM, SMI, SGP, GMP, and SIAM GD. For more information, visit https://personal.ntu.edu.sg/yhe/."
+  talk_title: "3D Reconstruction for Unoriented Point Clouds: From Watertight Solids to Open Surfaces"
+  abstract:
+    - "Reconstructing 3D surfaces from unoriented point clouds is a fundamental problem in digital geometry processing and 3D vision. Implicit fields provide a flexible framework, but the choice of field depends on the target geometry. For watertight surfaces, Poisson reconstruction and generalized winding numbers exploit a well-defined inside–outside distinction. I will review our work on reconstructing such surfaces without prescribed point orientations, from Iterative Poisson Surface Reconstruction (iPSR) and Diffusing Winding Gradients (DWG) to Dirichlet Winding Reconstruction (DiWR), which also adapts sampling weights and point confidence to handle uneven sampling and outliers. I will then describe recent approaches for representing and reconstructing open sheets, thin structures, and non-manifold junctions, where a global inside–outside label may be ill-defined. Together, these methods extend reconstruction from watertight solids toward more general surface geometry."
+
+- id: "klaus-gartner"
+  name: "Klaus Gärtner"
+  institution: "M4SIM Germany"
+  profile_url: "https://www.wias-berlin.de/spinoffs/MSim/index.jsp?lang=0"
+  profile_label: "Institutional project page"
+  biography:
+    - "Klaus Gärtner works in numerical semiconductor simulation. WIAS identifies him as a member of the m4sim spin-off project, which developed industrial microelectronics simulation software from the Oskar3 research simulator. The workshop materials list his affiliation as M4SIM, Germany."
+
+- id: "sarah-anne-harris"
+  name: "Sarah Anne Harris"
+  institution: "University of Sheffield"
+  profile_url: "https://sheffield.ac.uk/mps/people/all-academic-staff/sarah-harris"
+  profile_label: "Homepage"
+  biography:
+    - "Sarah Harris is Professor of Biological Physics in the School of Mathematical and Physical Sciences at the University of Sheffield."
+
+- id: "jean-francois-remacle"
+  name: "Jean-François Remacle"
+  institution: "Université catholique de Louvain"
+  profile_url: "https://perso.uclouvain.be/jean-francois.remacle/"
+  profile_label: "Homepage"
+  biography:
+    - "Jean-François Remacle is a full professor at the Louvain School of Engineering and the Institute of Mechanics, Materials and Civil Engineering at Université catholique de Louvain. He earned his doctorate in engineering at the University of Liège in 1997. His academic work includes computational geometry, finite elements and the Gmsh mesh-generation software."
+  photo_url: "http://scholar.google.be/citations?view_op=view_photo&user=G6FECu8AAAAJ&citpid=1"
+
+- id: "dmitry-sokolov"
+  name: "Dmitry Sokolov"
+  institution: "Université de Lorraine and Inria"
+  profile_url: "https://haqr.eu/"
+  profile_label: "Homepage"
+  biography:
+    - "Dmitry Sokolov is a Professor of Computer Science at the University of Lorraine. His research focuses on computer graphics, geometric modeling, and geometry processing, with particular emphasis on geometric data structures, mesh generation and processing, parametrization, and 3D modeling. He received his M.S. degree from Saint Petersburg State University in 2003 and his Ph.D. in Computer Graphics from the University of Limoges in 2006. He joined the University of Lorraine in 2008 and obtained his Habilitation à diriger des recherches in 2016. Since 2026, he is on secondment from the University of Lorraine to Inria, where he leads TEXEL, a joint Inria–CEA research team."
+  talk_title: "Variational Approaches to Locally Injective Deformations and Distortion Control?"
+  abstract:
+    - "Constructing mappings that are both locally injective and low-distortion is a fundamental problem in geometry processing, mesh generation, and numerical simulation. This talk presents a variational perspective that spans the spectrum from eliminating fold-overs to optimizing distortion. We will start with mesh untangling and then turn to distortion control, discussing bounded-distortion formulations, quasi-isometric stiffening as a way of approaching the smallest achievable distortion, and how these ideas can be extended from piecewise-linear to curved, high-order meshes."
+    - "We will then explore a different class of representations in which the optimization variables are not mesh vertices, but coefficients of a Laplace–Beltrami operator. This raises the question of how local injectivity and distortion can be controlled when the degrees of freedom describe an underlying operator rather than the deformation directly."
+    - "Together, these examples illustrate how variational formulations can provide a unified framework for enforcing geometric validity and controlling distortion across different representations of a mapping."
