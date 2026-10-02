@@ -43,6 +43,10 @@ file links from the document are not published. Jonathan Shewchuk's title remain
 marked as tentative. Sponsor, registration-link, accommodation, contact, and
 detailed schedule information remain pending.
 
+Each speaker has a page in `speakers/`, rendered by `_layouts/speaker.html` from
+the shared speaker data. The directory and Program page link to these profiles.
+Profiles display available portraits and provide buttons back to the directory.
+
 ### Carousel images
 
 Carousel order and image metadata are configured in `_data/carousel.yml`.

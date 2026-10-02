@@ -11,8 +11,9 @@ nav_key: program
     <h3>Talk Titles</h3>
     {% for speaker in site.data.speakers %}
     {% if speaker.talk_title %}
+    {% assign speaker_url = '/speakers/' | append: speaker.id | append: '/' %}
     <h3>{{ speaker.talk_title | escape }}{% if speaker.talk_tentative %} (tentative){% endif %}</h3>
-    <p><a class="standard-link" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}">{{ speaker.name | escape }}</a><br>{{ speaker.institution | escape }}{% if speaker.abstract %}<br><a class="standard-link" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}-abstract">Read abstract</a>{% endif %}</p>
+    <p><a class="standard-link" href="{{ speaker_url | relative_url }}">{{ speaker.name | escape }}</a><br>{{ speaker.institution | escape }}{% if speaker.abstract %}<br><a class="standard-link" href="{{ speaker_url | relative_url }}#abstract">Read abstract</a>{% endif %}</p>
     {% endif %}
     {% endfor %}
   </div>

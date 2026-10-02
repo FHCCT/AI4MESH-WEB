@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% assign speaker = site.data.speakers | where: 'id', page.speaker_id | first %}
+<section class="content-panel" aria-labelledby="speaker-title">
+  <h2 class="panel-title" id="speaker-title">{{ speaker.name | escape }}</h2>
+  <div class="panel-body prose">
+    <p><a class="speaker-back-button" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}">Back to speakers</a></p>
+    {% if speaker.photo_path or speaker.photo_url %}
+    {% if speaker.photo_path %}{% assign photo_src = speaker.photo_path | relative_url %}{% else %}{% assign photo_src = speaker.photo_url %}{% endif %}
+    <p><img class="speaker-portrait" src="{{ photo_src | escape }}" alt="{{ speaker.name | escape }}" decoding="async"></p>
+    {% endif %}
+    <p>{{ speaker.institution | escape }}<br>
+      <a class="standard-link" href="{{ speaker.profile_url | escape }}" target="_blank" rel="noopener noreferrer">{{ speaker.profile_label | escape }}</a>
+    </p>
+    {% if speaker.talk_title %}
+    <h3>Talk title{% if speaker.talk_tentative %} (tentative){% endif %}</h3>
+    <p>{{ speaker.talk_title | escape }}</p>
+    {% endif %}
+    {% if speaker.abstract %}
+    <h3 id="abstract">Abstract</h3>
+    {% for paragraph in speaker.abstract %}<p>{{ paragraph | escape }}</p>{% endfor %}
+    {% endif %}
+    <h3>Biography</h3>
+    {% for paragraph in speaker.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}
+    <p><a class="speaker-back-button" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}">Back to speakers</a></p>
+  </div>
+</section>

@@ -1,4 +1,5 @@
 - id: "herbert-edelsbrunner"
+  photo_path: "/assets/images/speakers/herbert-edelsbrunner.gif"
   name: "Herbert Edelsbrunner"
   institution: "Institute of Science and Technology Austria"
   profile_url: "https://pub.ista.ac.at/~edels/"
@@ -8,6 +9,7 @@
   photo_url: "https://pub.ista.ac.at/~edels/Gifs/herbert.gif"
 
 - id: "jonathan-richard-shewchuk"
+  photo_path: "/assets/images/speakers/jonathan-richard-shewchuk.gif"
   name: "Jonathan Richard Shewchuk"
   institution: "University of California Berkeley"
   profile_url: "https://people.eecs.berkeley.edu/~jrs/"
@@ -58,6 +60,7 @@
   photo_path: "/assets/images/speakers/marco-attene.jpg"
 
 - id: "nancy-hitschfeld-kahler"
+  photo_path: "/assets/images/speakers/nancy-hitschfeld-kahler.jpg"
   name: "Nancy Hitschfeld Kahler"
   institution: "Universidad de Chile"
   profile_url: "https://users.dcc.uchile.cl/~nancy/"
@@ -94,6 +97,7 @@
     - "Sarah Harris is Professor of Biological Physics in the School of Mathematical and Physical Sciences at the University of Sheffield."
 
 - id: "jean-francois-remacle"
+  photo_path: "/assets/images/speakers/jean-francois-remacle.jpg"
   name: "Jean-François Remacle"
   institution: "Université catholique de Louvain"
   profile_url: "https://perso.uclouvain.be/jean-francois.remacle/"
