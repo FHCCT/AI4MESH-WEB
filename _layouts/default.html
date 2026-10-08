@@ -8,7 +8,7 @@
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.short_title | escape }}</title>
     <meta name="description" content="{{ site.description | strip_newlines | escape }}">
     <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
