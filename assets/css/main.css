@@ -404,7 +404,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
 
 .hero-facts {
   display: grid;
-  grid-template-columns: 1.1fr 2.55fr;
+  grid-template-columns: max-content minmax(0, 1fr);
   margin: 0;
   padding-top: 17px;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
