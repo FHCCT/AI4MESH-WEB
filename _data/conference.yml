@@ -83,20 +83,22 @@ topics:
 
 registration:
   summary: >-
-    Registration for the workshop will be mandatory. Lunch meals and the banquet
-    will be complimentary. Travel expenses are at the participant's own charge.
+    Due to venue and capacity limitations, the workshop does not offer open
+    registration. If you wish to attend, please contact the workshop organizers
+    directly. Lunch meals and the banquet will be complimentary. Travel expenses
+    are at the participant's own charge.
   facts:
     - label: "Attendance"
-      value: "Registration required"
+      value: "No open registration; please contact the organizers directly"
     - label: "Included"
       value: "Lunch meals and banquet"
     - label: "Travel"
       value: "At the participant’s own charge"
 
 venue:
-  name: "Dalian University of Technology"
-  address: "No.2 Linggong Road, Ganjingzi District, Dalian, Liaoning, China"
-  map_url: "https://www.openstreetmap.org/search?query=Dalian%20University%20of%20Technology%20No.2%20Linggong%20Road"
+  name: "Dalian University of Technology, Development Zone Campus"
+  address: "Development Zone Campus, Dalian, Liaoning, China"
+  map_url: "https://www.openstreetmap.org/search?query=%E5%A4%A7%E8%BF%9E%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E5%BC%80%E5%8F%91%E5%8C%BA%E6%A0%A1%E5%8C%BA"
 
 city_intro:
   - >-

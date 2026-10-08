@@ -15,12 +15,16 @@ layout: default
       <a class="standard-link" href="{{ speaker.profile_url | escape }}" target="_blank" rel="noopener noreferrer">{{ speaker.profile_label | escape }}</a>
     </p>
     {% if speaker.talk_title %}
-    <h3>Talk title{% if speaker.talk_tentative %} (tentative){% endif %}</h3>
+    <h3>{% if speaker.talk_type %}{{ speaker.talk_type | escape }} talk title{% else %}Talk title{% endif %}{% if speaker.talk_tentative %} (tentative){% endif %}</h3>
     <p>{{ speaker.talk_title | escape }}</p>
     {% endif %}
     {% if speaker.abstract %}
     <h3 id="abstract">Abstract</h3>
     {% for paragraph in speaker.abstract %}<p>{{ paragraph | escape }}</p>{% endfor %}
+    {% endif %}
+    {% if speaker.references %}
+    <h3>References</h3>
+    {% for reference in speaker.references %}<p>{{ reference | escape }}</p>{% endfor %}
     {% endif %}
     <h3>Biography</h3>
     {% for paragraph in speaker.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}

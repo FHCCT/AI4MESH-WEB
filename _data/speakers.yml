@@ -15,10 +15,11 @@
   profile_url: "https://people.eecs.berkeley.edu/~jrs/"
   profile_label: "Homepage"
   biography:
-    - "Jonathan Richard Shewchuk is a professor of computer science at the University of California, Berkeley. His research includes computational geometry, mesh generation, numerical robustness, surface reconstruction and scientific computing. He earned his doctorate in computer science at Carnegie Mellon University in 1997 and joined Berkeley in 1998. He developed the Triangle mesh generator."
-  talk_title: "Better Sampling Bounds for Restricted Delaunay Triangulations and a Star-Shaped Property for Restricted Voronoi Cells"
-  talk_tentative: true
+    - "Jonathan Shewchuk is a Professor in the Department of Electrical Engineering and Computer Sciences at UC Berkeley. He is best known for his software Triangle for high-quality triangular mesh generation, which won the 2003 James Hardy Wilkinson Prize in Numerical Software, and his \"Introduction to the Conjugate Gradient Method Without the Agonizing Pain.\" His book \"Delaunay Mesh Generation,\" written jointly with Siu-Wing Cheng and Tamal Dey, is available from CRC Press."
+  talk_title: "Better Sampling Bounds for Restricted Delaunay Triangulations, with Applications to Surface Meshing"
   photo_url: "https://people.eecs.berkeley.edu/~jrs/head2.gif"
+  abstract:
+    - "The restricted Delaunay triangulation (RDT) is a well-established way of generating good-quality triangulations on curved surfaces. Researchers have developed a theory of surface sampling to determine how we should sample points on a surface to guarantee that an RDT is a topologically correct and geometrically accurate approximation of the surface, equipping geometers to rigorously prove the correctness of algorithms for surface reconstruction and surface mesh generation. It is well known that if the point set is a sufficiently dense sample of a smooth surface, then the union of the restricted Delaunay triangles is homeomorphic to the surface. I show that an epsilon-sample with epsilon < 0.3245 suffices. This is a significant improvement on the previous best bound, showing that RDTs are useful, not merely theoretical. I also review how RDTs are used to generate guaranteed-quality meshes of smooth surfaces."
 
 - id: "nikolay-petrovich-dolbilin"
   name: "Nikolay Petrovich Dolbilin"
@@ -41,11 +42,27 @@
 
 - id: "vladimir-anatolyevich-garanzha"
   name: "Vladimir Anatolyevich Garanzha"
-  institution: "Dorodnicyn Computing Centre and Federal Research Center Computer Science and Control RAS"
+  institution: "Federal Research Center for Computer Science and Control of the Russian Academy of Sciences (FRC CSC RAS), Moscow"
   profile_url: "https://www.mathnet.ru/eng/person53008"
   profile_label: "Academic profile"
   biography:
-    - "Vladimir Anatolyevich Garanzha holds a doctorate in physical and mathematical sciences and is a professor of the Russian Academy of Sciences. His published research includes Delaunay and Voronoi meshing, quasi-isometric mappings, mesh deformation and numerical methods for elasticity. His Math-Net profile lists affiliations with the Dorodnicyn Computing Centre and the Federal Research Center Computer Science and Control of the Russian Academy of Sciences."
+    - "Vladimir Anatolyevich Garanzha is a Professor of the Russian Academy of Sciences and a principal researcher at the Federal Research Center for Computer Science and Control of the Russian Academy of Sciences (FRC CSC RAS), Moscow."
+    - "His recent research applies Chebyshev cartography to ILT problems and includes two SIGGRAPH papers on mesh untangling and optimization. He received the IMR Best Technical Paper Award in 2017 for a paper related to prismatic boundary layer mesh generation."
+    - "His doctoral thesis was promoted by S. K. Godunov at the Sobolev Institute of Mathematics, Novosibirsk, in 2011. He began his research on mesh untangling in 1999."
+  talk_title: "Chebyshev maps in computational photolithography"
+  talk_type: "Keynote"
+  abstract:
+    - "In 1856 [1] Chebyshev suggested to measure error of cartographic projection using ratio of length of arbitrary path on the surface of the Earth and the lengths of the image of this path on the map. Chebyshev optimality principle postulates that a best maps provides minimal deviation of this ratio and its inverse from unity for arbitrary trajectories. In other words Chebyshev introduced quasi-isometric (QI) mappings with minimal quasi-isometric constant K into engineering practice."
+    - "In mathematical photolithography one have to construct a 2d binary pattern (mask) in such a way that after exposition and development the structures on the photoresistive mask on a wafer are as close as possible to structures on layout. One can consider layout structures as canonical \"continents\" while structures on the photoresistive mask can be considered as distorted \"continents\" on the map. Chebyshev principle states that best predicted photoresistive mask is the one which provide smallest quasi-isometry constant for a mapping from the layout domain to photoresistive mask domain."
+    - "Quasi-isometric constant K provides relative error K - 1 as a technological error measure for photolithography. If this error measure is below certain threshold, one can guarantee that all standard photolithography error measures would be below certain threshold expressed as functions of single parameter K-1."
+    - "Hence, provided that one can construct practical algorithm for construction of quasi-isometric map, the simulation provides direct error bounds."
+    - "In [2] practical algorithm QIS (quasi-isometric stiffening) for QI mapping was constructed and justified. It was found also that quasi-isometric deformations are extremely stable with respect to variations of input data."
+    - "Relation of equidistribution principle and optimal Chebyshev maps, considered in [2], when applied to photolithography, suggests a mathematically sound way to obtain so called \"attainable layouts\", meaning smart smoothing of sharp corners in the layout structure contours which equidisributes global photoresistive mask distortion error."
+    - "In [3] simplified algorithm for approximate QI mapping construction was presented, based on successive one-to-one deformations of initial layout to obtain final mask for approximate minimization of distortion of the map from layout domain to photoresistive mask domain. The resulting algorithm was tested using open-source simulator of immersive 193nm photolithograph and for practical resolution enhancement problem - attaining critical dimension 250nm for photolithograph with incoherent 365nm source by compensating optical proximity and taking into account resist behaviour. Quite promising results were obtained."
+  references:
+    - "[1] P. L. Chebyshev. Œuvres, edited by A. Markoff and N. Sonin, 2 volumes. Imprimerie de l’Académie Impériale des Sciences, Saint Petersburg, 1899–1907."
+    - "[2] Garanzha V., Kaporin I., Kudryavtseva L., Protais F., Sokolov D. In the quest for scale-optimal mappings // ACM Transactions on Graphics. 2024. Vol. 43, No 1. P 1—16."
+    - "[3] A.I. Belokrys-Fedotov, V.A. Garanzha, I.E. Kaporin, L.N. Kudryavtseva, S.M. Sedunov, V.V. Stupnikov, M.P. Fedonin, I.Yu. Fedorov, E.F. Chepurin. Mask optimization algorithms for optical proximity correction of photolithograph. VANT Series Mathematical Modeling of Physical Processes 2025, issue 2, P 34-56."
 
 - id: "marco-attene"
   name: "Marco Attene"

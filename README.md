@@ -37,11 +37,17 @@ the site works both as a user site and as a project site under `/repository/`.
 
 Conference facts and page copy live in `_data/conference.yml`. Speaker profiles,
 talk titles, abstracts, and resource links live in `_data/speakers.yml`, based on
-`Dalian_2026_Speaker_Directory(1).docx`. The Speakers and Program pages share this
+`Dalian_2026_Speaker_Directory(1).docx` and the updates in `information_add_2.txt`.
+The Speakers and Program pages share this
 data. The supplied photos are stored in `assets/images/speakers/`; local source
-file links from the document are not published. Jonathan Shewchuk's title remains
-marked as tentative. Sponsor, registration-link, accommodation, contact, and
-detailed schedule information remain pending.
+file links from the document are not published. The supplemental text updates
+Jonathan Shewchuk's title, abstract, and biography, and supplies Vladimir
+Garanzha's keynote title, abstract, references, and biography. Reference [3]
+retains only complete supplied fields because the source ends mid-phrase.
+The venue is the Development Zone Campus of Dalian University of Technology.
+Registration is not open to the public; prospective attendees should contact
+the organizers directly. Sponsor, accommodation, and detailed schedule
+information remain pending.
 
 Each speaker has a page in `speakers/`, rendered by `_layouts/speaker.html` from
 the shared speaker data. The directory and Program page link to these profiles.
