@@ -446,7 +446,7 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .hero-facts {
     container-type: inline-size;
     width: calc(100% + 24px);
-    grid-template-columns: 100px minmax(0, 1fr);
+    grid-template-columns: max-content minmax(0, 1fr);
   }
 
   .hero-facts > div:first-child {
@@ -457,8 +457,8 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
     padding-left: 8px;
   }
 
-  .hero-facts > div:last-child dd {
-    font-size: clamp(14px, calc((100cqw - 108px) / 36), 20px);
+  .hero-facts dd {
+    font-size: min(20px, calc((100cqw - 17px) / 45.6));
     white-space: nowrap;
   }
 }
