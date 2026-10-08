@@ -442,6 +442,27 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   line-height: 1.45;
 }
 
+@media (min-width: 1280px) {
+  .hero-facts {
+    container-type: inline-size;
+    width: calc(100% + 24px);
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
+
+  .hero-facts > div:first-child {
+    padding-right: 8px;
+  }
+
+  .hero-facts > div:last-child {
+    padding-left: 8px;
+  }
+
+  .hero-facts > div:last-child dd {
+    font-size: clamp(14px, calc((100cqw - 108px) / 36), 20px);
+    white-space: nowrap;
+  }
+}
+
 .main-shell {
   width: min(1040px, calc(100% - 270px));
   margin: 0 auto;
