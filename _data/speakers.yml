@@ -12,7 +12,7 @@
 - id: "jonathan-richard-shewchuk"
   photo_path: "/assets/images/speakers/jonathan-richard-shewchuk.gif"
   name: "Jonathan Richard Shewchuk"
-  institution: "University of California Berkeley"
+  institution: "University of California, Berkeley"
   profile_url: "https://people.eecs.berkeley.edu/~jrs/"
   profile_label: "Homepage"
   biography:
@@ -24,7 +24,7 @@
 
 - id: "nikolay-petrovich-dolbilin"
   name: "Nikolay Petrovich Dolbilin"
-  institution: "Steklov Mathematical Institute of the Russian Academy of Sciences"
+  institution: "Russian Academy of Sciences"
   profile_url: "https://www.mi-ras.ru/staff/dolbilin_e.html"
   profile_label: "Homepage"
   biography:
@@ -43,7 +43,7 @@
 
 - id: "vladimir-anatolyevich-garanzha"
   name: "Vladimir Anatolyevich Garanzha"
-  institution: "Federal Research Center for Computer Science and Control of the Russian Academy of Sciences (FRC CSC RAS), Moscow"
+  institution: "Russian Academy of Sciences"
   profile_url: "https://www.mathnet.ru/eng/person53008"
   profile_label: "Academic profile"
   biography:
@@ -80,16 +80,19 @@
 - id: "nancy-hitschfeld-kahler"
   photo_path: "/assets/images/speakers/nancy-hitschfeld-kahler.jpg"
   name: "Nancy Hitschfeld Kahler"
-  institution: "Universidad de Chile"
+  institution: "University of Chile"
   profile_url: "https://users.dcc.uchile.cl/~nancy/"
   profile_label: "Homepage"
   biography:
-    - "Nancy Hitschfeld Kahler is a full professor in the Department of Computer Science at Universidad de Chile. She obtained her bachelor’s and master’s degrees there and her doctorate at ETH Zurich in 1993. Her research concerns polygonal and polyhedral meshes, GPU computing, and computational science and engineering."
+    - "Nancy Hitschfeld received her BSc and MSc degrees in Computer Science from the University of Chile in 1984 and 1987, respectively, and the doctoral degree in Applied Sciences (Technischen Wissenschaften) from the Swiss Federal Institute of Technology (ETH-Zurich) in 1993. Currently, she works as full professor in the Computer Science Department (DCC) of the Faculty of Physical and Mathematical Sciences (FCFM) at the University of Chile. Her main research interests include geometric modeling, polygonal and polyhedral meshes, and parallel algorithms (GPU computing), for solving problems in computational science and engineering applications. She has led seven national granted research projects focused on the design and implementation of new sequential and GPU-parallel meshing algorithms mainly for control volume and virtual element methods. The new algorithms are for generating triangulations, 3D mixed element Delaunay meshes and polygonal/polyhedral meshes, where polygons/polyhedra can be convex or not. The applications where this research has been applied are semiconductor device simulation, hydrological modeling, voids modeling in astronomy and, particle simulations, among others."
   photo_url: "https://users.dcc.uchile.cl/~nancy/sites/default/files/irmaBrunoUsa2017.jpg"
+  talk_title: "Polygonal/Polyhedral meshing in Computational Science and Engineering"
+  abstract:
+    - "Modeling engineering and scientific problems using numerical methods, the graphical representation of models or physical phenomena, typically require an adequate spatial discretization (mesh) of a domain or object in question. Applications range from hydrological modeling, process and device simulation, fluid dynamics, and fracture mechanics to the identification of clusters and voids in galaxy surveys and real-time visualization involving physical simulation. Depending on the specific problem and numerical method employed, the mesh cells must satisfy specific geometric properties, and the mesh as a whole must exhibit an optimal distribution of points. These requirements make the generation of high-quality meshes with the minimum possible number of points still a challenge, particularly in three-dimensional space As a way to address the previous challenge, there has been increased interest in algorithms for generating polygonal/polyhedral meshes composed of arbitrary polygons/polyhedra. Applications modeled with the numerical method known as the Virtual Element Method (VEM), along with some of those mentioned above, can benefit from them. In the literature, when polygonal meshes are preferred, constrained Voronoi meshes are the standard meshes. This talk focuses then on algorithms for generating arbitrary polygonal and polyhedral meshes, as well as the applications that motivated this research. Two-dimensional and three-dimensional algorithms are presented that, starting from triangulated/tetrahedral meshes (indirect methods), construct terminal-edge regions and transform them into simple polygonal/polyhedral elements. The polygons/polyhedra can be convex or non-convex, depending on the geometry and distribution of the input points provided by the user. The geometric properties of the polyhedral cells derived from the terminal-edge regions of Delaunay and non-Delaunay partitions will also be analyzed, along with a comparison to constrained Voronoi meshes in terms of the number of points/elements, the accuracy of the simulation results, and the simulation time/memory requirements. Finally, the extent to which these algorithms can be accelerated using GPU computing will be explored."
 
 - id: "ying-he"
   name: "Ying He"
-  institution: "Nanyang Technological University Singapore"
+  institution: "Nanyang Technological University"
   profile_url: "https://personal.ntu.edu.sg/yhe/"
   profile_label: "Homepage"
   biography:
@@ -100,11 +103,14 @@
 
 - id: "klaus-gartner"
   name: "Klaus Gärtner"
-  institution: "M4SIM Germany"
+  institution: "M4SIM"
   profile_url: "https://www.wias-berlin.de/spinoffs/MSim/index.jsp?lang=0"
   profile_label: "Institutional project page"
   biography:
     - "Klaus Gärtner works in numerical semiconductor simulation. WIAS identifies him as a member of the m4sim spin-off project, which developed industrial microelectronics simulation software from the Oskar3 research simulator. The workshop materials list his affiliation as M4SIM, Germany."
+  talk_title: "Sorting faster than n log(n)"
+  abstract:
+    - "Standard algorithms for sorting numbers have a complexity of n log(n) and require only lower and upper bounds on the data. In contrast, the solution of partial differential equations (PDEs) describing natural processes involves an energy constraint; furthermore, the solution exhibits a certain degree of smoothness, and potential singularities are limited by the \"finite energy\" condition. Alternatively: Many of our meshing problems are related to solutions in W¹,². It is therefore natural to assume a certain degree of smoothness for the data determining the solution to the problem and the associated meshes. If coordinate sorting is used to construct the meshes, it makes sense to look for mappings that move the numbers to be sorted over large distances, closer to their final positions, in order to avoid n log(n) complexity. Thus, if the data to be sorted is \"smooth\" but randomly arranged due to its construction, it makes sense to move it over large distances, closer to its final position during the sorting process. Grid generation should not be the only application for this type of sorting, as updating large datasets is also a common task."
 
 - id: "sarah-anne-harris"
   name: "Sarah Anne Harris"
@@ -112,12 +118,17 @@
   profile_url: "https://sheffield.ac.uk/mps/people/all-academic-staff/sarah-harris"
   profile_label: "Homepage"
   biography:
-    - "Sarah Harris is Professor of Biological Physics in the School of Mathematical and Physical Sciences at the University of Sheffield."
+    - "Sarah Anne Harris (SAH) is a computational biophysicist and Chair of Biological and Materials Physics in the School of Mathematical and Physical Sciences at the University of Sheffield, UK. Her research uses high performance computer simulations to provide physical insight into biological mechanisms from the atomistic up to the cellular level. She has developed new theoretical physics tools to understand molecular biology at the mesoscale (https://ffea.bitbucket.io/), with a focus on modelling molecular motors such as dynein and myosin. SAH is a strong advocate for the use of computation in the biological sciences, and is the current Chair of the Collaborative Computational Project in Biomolecular simulation (Cubism) which supports UK researchers using simulations to understand biomolecular interactions and processes. Cubism provides both beginners and expert workshops, and meetings identifying new cutting edge topics (https://www.ccpbiosim.org/)."
+  talk_title: "Finite Elements for Soft Biomolecules subject to Thermal Noise"
+  abstract:
+    - "Finite Element Analysis (FEA) is an established computational design tool for macroscopic engineering applications. Computer models of soft nanoscale objects, such as proteins, require a modified approach because proteins continuously change shape due to thermal fluctuations. We have developed Fluctuating Finite Element Analysis (FFEA), which is an implementation of conventional FEA for 3D tetrahedral elements in the presence of thermal noise. This new approach has been inspired by recent breakthroughs in experimental structural biology, particularly cryo-electron microscopy (cryo-EM) and cryo-electron tomography (cryo-ET), that are providing a wealth of new information about the organisation of the biological materials within cells."
+    - "Thermal fluctuations change the requirements for the 3D meshes used in FFEA from those that would be needed for FEA of macroscopic objects. The shape of a protein in FFEA is usually defined using experimental data from cryo-EM, which provides a probability density for the location of the atoms within the structure rather than a well-defined 2D surface. Moreover, the presence of thermal noise causes mathematical instabilities in the FFEA algorithm when the dimensions of any of the finite elements fall below a critical size."
+    - "In this presentation I will describe the scientific motivation for the development of FFEA and give a brief overview of our successes at modelling protein molecular motors. I will then outline the mathematical challenges with 3D meshing and algorithm stability in FFEA and make suggestions for possible future collaborations that would help us to overcome these issues."
 
 - id: "jean-francois-remacle"
   photo_path: "/assets/images/speakers/jean-francois-remacle.jpg"
   name: "Jean-François Remacle"
-  institution: "Université catholique de Louvain"
+  institution: "University of Leuven"
   profile_url: "https://perso.uclouvain.be/jean-francois.remacle/"
   profile_label: "Homepage"
   biography:
@@ -126,7 +137,7 @@
 
 - id: "dmitry-sokolov"
   name: "Dmitry Sokolov"
-  institution: "Université de Lorraine and Inria"
+  institution: "University of Lorraine"
   profile_url: "https://haqr.eu/"
   profile_label: "Homepage"
   biography:
@@ -136,3 +147,8 @@
     - "Constructing mappings that are both locally injective and low-distortion is a fundamental problem in geometry processing, mesh generation, and numerical simulation. This talk presents a variational perspective that spans the spectrum from eliminating fold-overs to optimizing distortion. We will start with mesh untangling and then turn to distortion control, discussing bounded-distortion formulations, quasi-isometric stiffening as a way of approaching the smallest achievable distortion, and how these ideas can be extended from piecewise-linear to curved, high-order meshes."
     - "We will then explore a different class of representations in which the optimization variables are not mesh vertices, but coefficients of a Laplace–Beltrami operator. This raises the question of how local injectivity and distortion can be controlled when the degrees of freedom describe an underlying operator rather than the deformation directly."
     - "Together, these examples illustrate how variational formulations can provide a unified framework for enforcing geometric validity and controlling distortion across different representations of a mapping."
+
+- id: "anatoliy-vershinin"
+  name: "Anatoliy Vershinin"
+  biography: []
+  institution: "Lomonosov Moscow State University"

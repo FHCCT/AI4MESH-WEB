@@ -12,7 +12,7 @@ layout: default
     <p><img class="speaker-portrait" src="{{ photo_src | escape }}" alt="{{ speaker.name | escape }}" decoding="async"></p>
     {% endif %}
     <p>{{ speaker.institution | escape }}<br>
-      <a class="standard-link" href="{{ speaker.profile_url | escape }}" target="_blank" rel="noopener noreferrer">{{ speaker.profile_label | escape }}</a>
+      {% if speaker.profile_url %}<a class="standard-link" href="{{ speaker.profile_url | escape }}" target="_blank" rel="noopener noreferrer">{{ speaker.profile_label | escape }}</a>{% endif %}
     </p>
     {% if speaker.talk_title %}
     <h3>{% if speaker.talk_type %}{{ speaker.talk_type | escape }} talk title{% else %}Talk title{% endif %}{% if speaker.talk_tentative %} (tentative){% endif %}</h3>
@@ -26,8 +26,8 @@ layout: default
     <h3>References</h3>
     {% for reference in speaker.references %}<p>{{ reference | escape }}</p>{% endfor %}
     {% endif %}
-    <h3>Biography</h3>
-    {% for paragraph in speaker.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}
+    {% if speaker.biography.size > 0 %}<h3>Biography</h3>
+    {% for paragraph in speaker.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
     <p><a class="speaker-back-button" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}">Back to speakers</a></p>
   </div>
 </section>
