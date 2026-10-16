@@ -26,7 +26,8 @@ layout: default
     <h3>References</h3>
     {% for reference in speaker.references %}<p>{{ reference | escape }}</p>{% endfor %}
     {% endif %}
-    {% if speaker.biography.size > 0 %}<h3>Biography</h3>
+    {% if speaker.biography.size > 0 or speaker.biography_url %}<h3>Biography</h3>
+    {% if speaker.biography_url %}<p><a class="standard-link" href="{{ speaker.biography_url | escape }}" target="_blank" rel="noopener noreferrer">Homepage</a></p>{% endif %}
     {% for paragraph in speaker.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
     <p><a class="speaker-back-button" href="{{ '/speakers/' | relative_url }}#{{ speaker.id }}">Back to speakers</a></p>
   </div>

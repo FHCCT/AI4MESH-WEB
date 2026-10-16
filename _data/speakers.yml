@@ -152,3 +152,14 @@
   name: "Anatoliy Vershinin"
   biography: []
   institution: "Lomonosov Moscow State University"
+
+- id: "jianjun-chen"
+  name: "Jianjun Chen"
+  institution: "Zhejiang University"
+  profile_url: "https://person.zju.edu.cn/jjchen"
+  profile_label: "Homepage"
+  talk_title: "Robust Constrained Tetrahedralization with Steiner-point-free Boundaries"
+  abstract:
+    - "We introduce a robust algorithm for generating tetrahedral meshes that strictly conform to the geometry and connectivity of valid non-self-intersecting piecewise-linear complexes (PLCs). A key challenge in this task is the control of Steiner point placement. While optimizing Steiner point placement is NP-hard, eliminating boundary Steiner points remains practically important for preserving boundary topology and interface connectivity. To address this challenge, we introduce the concept of flip-hard configurations (FHCs), which characterize local situations where constraint recovery cannot proceed using flip operations alone. Based on this observation, we enhance the classical boundary recovery pipeline with FHC-guided interior Steiner insertion, robust boundary Steiner relocation, and local mesh optimization under floating-point arithmetic. These mechanisms reduce the reliance on boundary Steiner points and mitigate numerical failures caused by finite-precision rounding. We evaluate the proposed algorithm on all 5,468 valid models from the Thingi10K dataset. In these experiments, the implementation successfully produced constrained tetrahedralizations for all models, and all generated meshes contain Steiner-point-free boundaries while preserving the input PLC topology."
+  biography: []
+  biography_url: "https://person.zju.edu.cn/jjchen"
