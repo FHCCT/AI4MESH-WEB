@@ -1,0 +1,193 @@
+{
+  "venue": "Teaching Building A201, Development Zone Campus, Dalian University of Technology",
+  "days": [
+    {
+      "date": "28 October 2026",
+      "entries": [
+        {
+          "time": "All day",
+          "title": "Registration"
+        }
+      ]
+    },
+    {
+      "date": "29 October 2026",
+      "entries": [
+        {
+          "time": "09:00–09:30",
+          "title": "Opening Ceremony & Group Photo"
+        },
+        {
+          "time": "09:30–10:15",
+          "title": "Delone Sets: From Local to Global",
+          "speaker": "Nikolay Petrovich Dolbilin",
+          "speaker_id": "nikolay-petrovich-dolbilin"
+        },
+        {
+          "time": "10:15–10:35",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "10:35–11:25",
+          "title": "Better Sampling Bounds for Restricted Delaunay Triangulations, with Applications to Surface Meshing",
+          "speaker": "Jonathan Richard Shewchuk",
+          "speaker_id": "jonathan-richard-shewchuk"
+        },
+        {
+          "time": "11:25–11:50",
+          "title": "Robustness Issues Make Geometry Different",
+          "speaker": "Kilian Bertrand E.Verhetsel"
+        },
+        {
+          "time": "12:00–13:30",
+          "title": "Lunch"
+        },
+        {
+          "time": "13:30–14:15",
+          "title": "Robust Computational Geometry",
+          "speaker": "Marco Attene",
+          "speaker_id": "marco-attene"
+        },
+        {
+          "time": "14:15–14:40",
+          "title": "TBA",
+          "speaker": "Christos Geogiadis"
+        },
+        {
+          "time": "14:40–15:00",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "15:00–15:45",
+          "title": "Polygonal/Polyhedral Meshing in Computational Science and Engineering",
+          "speaker": "Nancy Hitschfeld Kahler",
+          "speaker_id": "nancy-hitschfeld-kahler"
+        },
+        {
+          "time": "15:45–16:10",
+          "title": "Automated Block-Structured Mesh Generation via Deep Reinforcement Learning and Optimal Conformal Mapping",
+          "speaker": "Haiyan Wu"
+        },
+        {
+          "time": "16:10–16:25",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "16:25–17:10",
+          "title": "Sorting Faster Than n log(n)",
+          "speaker": "Klaus Gärtner",
+          "speaker_id": "klaus-gartner"
+        },
+        {
+          "time": "17:10–17:25",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "17:25–18:10",
+          "title": "Robust Constrained Tetrahedralization with Steiner-point-free Boundaries",
+          "speaker": "Jianjun Chen",
+          "speaker_id": "jianjun-chen"
+        },
+        {
+          "time": "18:30–20:30",
+          "title": "Dinner"
+        }
+      ]
+    },
+    {
+      "date": "30 October 2026",
+      "entries": [
+        {
+          "time": "09:00–09:45",
+          "title": "The Mohr Circle Isomorphism and an Application to Measuring Without Reconstruction",
+          "speaker": "Herbert Edelsbrunner",
+          "speaker_id": "herbert-edelsbrunner"
+        },
+        {
+          "time": "09:45–10:00",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "10:00–10:45",
+          "title": "Finite Elements for Soft Biomolecules Subject to Thermal Noise",
+          "speaker": "Sarah Anne Harris",
+          "speaker_id": "sarah-anne-harris"
+        },
+        {
+          "time": "10:45–11:10",
+          "title": "TBA",
+          "speaker": "Xiaopeng Zheng"
+        },
+        {
+          "time": "11:10–11:25",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "11:25–12:10",
+          "title": "3D Reconstruction for Unoriented Point Clouds: From Watertight Solids to Open Surfaces",
+          "speaker": "Ying He",
+          "speaker_id": "ying-he"
+        },
+        {
+          "time": "12:10–13:30",
+          "title": "Lunch"
+        },
+        {
+          "time": "13:30–14:15",
+          "title": "Chebyshev Maps in Computational Photolithography",
+          "speaker": "Vladimir Anatolyevich Garanzha",
+          "speaker_id": "vladimir-anatolyevich-garanzha"
+        },
+        {
+          "time": "14:15–14:40",
+          "title": "Generative AI-Driven Volumetric Spline Construction for Isogeometric Analysis of Complex Geometries",
+          "speaker": "Yuxuan Yu"
+        },
+        {
+          "time": "14:40–15:00",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "15:00–15:45",
+          "title": "Variational Approaches to Locally Injective Deformations and Distortion Control?",
+          "speaker": "Dmitry Sokolov",
+          "speaker_id": "dmitry-sokolov"
+        },
+        {
+          "time": "15:45–16:10",
+          "title": "TBA",
+          "speaker": "Anatoliy Vershinin",
+          "speaker_id": "anatoliy-vershinin"
+        },
+        {
+          "time": "16:10–16:30",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "16:30–17:15",
+          "title": "TBA",
+          "speaker": "David Xianfeng Gu"
+        },
+        {
+          "time": "17:15–17:40",
+          "title": "TBA",
+          "speaker": "Yiming Zhu"
+        },
+        {
+          "time": "17:40–17:50",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "17:50–18:35",
+          "title": "TBA",
+          "speaker": "Jean-François Remacle",
+          "speaker_id": "jean-francois-remacle"
+        },
+        {
+          "time": "",
+          "title": "Closing Ceremony"
+        }
+      ]
+    }
+  ]
+}
