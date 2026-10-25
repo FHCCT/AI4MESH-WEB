@@ -179,9 +179,10 @@
         },
         {
           "time": "17:50–18:35",
-          "title": "TBA",
+          "title": "The tempered finite element method — computing with slivers and non watertight hex/tet meshes",
           "speaker": "Jean-François Remacle",
-          "speaker_id": "jean-francois-remacle"
+          "speaker_id": "jean-francois-remacle",
+          "online": true
         },
         {
           "time": "",

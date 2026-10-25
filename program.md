@@ -18,7 +18,7 @@ nav_key: program
         <tr>
           <td>{{ entry.time | escape }}</td>
           <td>{{ entry.title | escape }}</td>
-          <td>{% if entry.speaker_id %}{% assign speaker_url = '/speakers/' | append: entry.speaker_id | append: '/' %}<a class="standard-link" href="{{ speaker_url | relative_url }}">{{ entry.speaker | escape }}</a>{% else %}{{ entry.speaker | escape }}{% endif %}</td>
+          <td>{% if entry.speaker_id %}{% assign speaker_url = '/speakers/' | append: entry.speaker_id | append: '/' %}<a class="standard-link" href="{{ speaker_url | relative_url }}">{{ entry.speaker | escape }}</a>{% else %}{{ entry.speaker | escape }}{% endif %}{% if entry.online %} (online){% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>
