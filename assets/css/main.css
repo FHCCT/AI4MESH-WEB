@@ -909,6 +909,15 @@ html:not(.js-enabled) .nav-group:focus-within > .nav-submenu {
   .program-table td {
     padding: 10px 6px;
   }
+
+  .program-table th:nth-child(1) { width: 22%; }
+  .program-table th:nth-child(2) { width: 46%; }
+  .program-table th:nth-child(3) { width: 32%; }
+
+  .program-table th:first-child,
+  .program-table td:first-child {
+    overflow-wrap: normal;
+  }
 }
 
 .speaker-back-button {
