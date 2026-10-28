@@ -1,5 +1,5 @@
 {
-  "venue": "Teaching Building A201, Development Zone Campus, Dalian University of Technology",
+  "venue": "Development Zone Campus, Dalian University of Technology",
   "days": [
     {
       "date": "28 October 2026",
@@ -15,43 +15,65 @@
       "entries": [
         {
           "time": "09:00–09:30",
-          "title": "Opening Ceremony & Group Photo"
+          "title": "Opening Ceremony & Group Photo",
+          "chair": "Na Lei",
+          "items": [
+            "Welcome Address by Zhongxuan Luo (DUT)",
+            "Opening Address by Hang Si (Organizing Committee)",
+            "Address by Vladimir Garanzha (Overseas Colleagues)",
+            "Group Photo"
+          ]
         },
         {
-          "time": "09:30–10:15",
-          "title": "Delone Sets: From Local to Global",
-          "speaker": "Nikolay Petrovich Dolbilin",
-          "speaker_id": "nikolay-petrovich-dolbilin"
-        },
-        {
-          "time": "10:15–10:35",
+          "time": "09:30–09:45",
           "title": "Coffee Break"
         },
         {
-          "time": "10:35–11:25",
-          "title": "Better Sampling Bounds for Restricted Delaunay Triangulations, with Applications to Surface Meshing",
-          "speaker": "Jonathan Richard Shewchuk",
-          "speaker_id": "jonathan-richard-shewchuk"
+          "time": "09:45–10:30",
+          "title": "Delone Sets: From Local to Global",
+          "speaker": "Nikolay Petrovich Dolbilin",
+          "speaker_id": "nikolay-petrovich-dolbilin",
+          "chair": "Herbert Edelsbrunner",
+          "institution": "Russian Academy of Sciences"
         },
         {
-          "time": "11:25–11:50",
+          "time": "10:30–10:45",
+          "title": "Coffee Break"
+        },
+        {
+          "time": "10:45–11:30",
+          "title": "Better Sampling Bounds for Restricted Delaunay Triangulations, with Applications to Surface Meshing",
+          "speaker": "Jonathan Richard Shewchuk",
+          "speaker_id": "jonathan-richard-shewchuk",
+          "chair": "Hang Si",
+          "institution": "University of California, Berkeley"
+        },
+        {
+          "time": "11:30–11:55",
           "title": "Robustness Issues Make Geometry Different",
-          "speaker": "Kilian Bertrand E.Verhetsel"
+          "speaker": "Kilian Verhetsel",
+          "chair": "Hang Si",
+          "institution": "Université catholique de Louvain"
         },
         {
           "time": "12:00–13:30",
-          "title": "Lunch"
+          "title": "Lunch",
+          "location": "Canteen 3F"
         },
         {
           "time": "13:30–14:15",
           "title": "Robust Computational Geometry",
           "speaker": "Marco Attene",
-          "speaker_id": "marco-attene"
+          "speaker_id": "marco-attene",
+          "chair": "Dongming Yan",
+          "institution": "National Research Council of Italy"
         },
         {
           "time": "14:15–14:40",
-          "title": "TBA",
-          "speaker": "Christos Geogiadis"
+          "title": "Industrial Meshing Software in Practice: Experiences and Perspectives on AI",
+          "speaker": "Christos Georgiadis",
+          "chair": "Dongming Yan",
+          "institution": "Shenzhen Yunbo Software Technology Co., Ltd."
         },
         {
           "time": "14:40–15:00",
@@ -61,38 +83,43 @@
           "time": "15:00–15:45",
           "title": "Polygonal/Polyhedral Meshing in Computational Science and Engineering",
           "speaker": "Nancy Hitschfeld Kahler",
-          "speaker_id": "nancy-hitschfeld-kahler"
+          "speaker_id": "nancy-hitschfeld-kahler",
+          "chair": "Zhonggui Chen",
+          "institution": "University of Chile"
         },
         {
           "time": "15:45–16:10",
-          "title": "Automated Block-Structured Mesh Generation via Deep Reinforcement Learning and Optimal Conformal Mapping",
-          "speaker": "Haiyan Wu"
+          "title": "Neural Network-Driven Swept Volume Decomposition for Automatic Hexahedral Meshing",
+          "speaker": "Haiyan Wu",
+          "chair": "Zhonggui Chen",
+          "institution": "Hangzhou Dianzi University"
         },
         {
-          "time": "16:10–16:25",
+          "time": "16:10–16:30",
           "title": "Coffee Break"
         },
         {
-          "time": "16:25–17:10",
+          "time": "16:30–17:15",
           "title": "Sorting Faster Than n log(n)",
           "speaker": "Klaus Gärtner",
-          "speaker_id": "klaus-gartner"
+          "speaker_id": "klaus-gartner",
+          "chair": "Hongfei Ye",
+          "institution": "M4SIM"
         },
         {
-          "time": "17:10–17:25",
-          "title": "Coffee Break"
-        },
-        {
-          "time": "17:25–18:10",
+          "time": "17:15–18:00",
           "title": "Robust Constrained Tetrahedralization with Steiner-point-free Boundaries",
           "speaker": "Jianjun Chen",
-          "speaker_id": "jianjun-chen"
+          "speaker_id": "jianjun-chen",
+          "chair": "Jin Huang",
+          "institution": "Zhejiang University"
         },
         {
-          "time": "18:30–20:30",
+          "time": "18:10–20:30",
           "title": "Dinner"
         }
-      ]
+      ],
+      "venue": "Morning: Library Lecture Hall. Afternoon: Teaching Building A201."
     },
     {
       "date": "30 October 2026",
@@ -101,7 +128,9 @@
           "time": "09:00–09:45",
           "title": "The Mohr Circle Isomorphism and an Application to Measuring Without Reconstruction",
           "speaker": "Herbert Edelsbrunner",
-          "speaker_id": "herbert-edelsbrunner"
+          "speaker_id": "herbert-edelsbrunner",
+          "chair": "Kefeng Liu",
+          "institution": "Institute of Science and Technology Austria"
         },
         {
           "time": "09:45–10:00",
@@ -111,12 +140,16 @@
           "time": "10:00–10:45",
           "title": "Finite Elements for Soft Biomolecules Subject to Thermal Noise",
           "speaker": "Sarah Anne Harris",
-          "speaker_id": "sarah-anne-harris"
+          "speaker_id": "sarah-anne-harris",
+          "chair": "Haisheng Li",
+          "institution": "University of Sheffield"
         },
         {
           "time": "10:45–11:10",
-          "title": "TBA",
-          "speaker": "Xiaopeng Zheng"
+          "title": "High-Quality Mesh Generation Research — Overview of the Team’s Work",
+          "speaker": "Xiaopeng Zheng",
+          "chair": "Haisheng Li",
+          "institution": "Dalian University of Technology"
         },
         {
           "time": "11:10–11:25",
@@ -126,22 +159,29 @@
           "time": "11:25–12:10",
           "title": "3D Reconstruction for Unoriented Point Clouds: From Watertight Solids to Open Surfaces",
           "speaker": "Ying He",
-          "speaker_id": "ying-he"
+          "speaker_id": "ying-he",
+          "chair": "Jiangbei Hu",
+          "institution": "Nanyang Technological University"
         },
         {
           "time": "12:10–13:30",
-          "title": "Lunch"
+          "title": "Lunch",
+          "location": "Canteen 3F"
         },
         {
           "time": "13:30–14:15",
           "title": "Variational Approaches to Locally Injective Deformations and Distortion Control?",
           "speaker": "Dmitry Sokolov",
-          "speaker_id": "dmitry-sokolov"
+          "speaker_id": "dmitry-sokolov",
+          "chair": "Wanchao Su",
+          "institution": "University of Lorraine"
         },
         {
           "time": "14:15–14:40",
           "title": "Generative AI-Driven Volumetric Spline Construction for Isogeometric Analysis of Complex Geometries",
-          "speaker": "Yuxuan Yu"
+          "speaker": "Yuxuan Yu",
+          "chair": "Wanchao Su",
+          "institution": "Donghua University"
         },
         {
           "time": "14:40–15:00",
@@ -151,13 +191,17 @@
           "time": "15:00–15:45",
           "title": "Chebyshev Maps in Computational Photolithography",
           "speaker": "Vladimir Anatolyevich Garanzha",
-          "speaker_id": "vladimir-anatolyevich-garanzha"
+          "speaker_id": "vladimir-anatolyevich-garanzha",
+          "chair": "Shengfa Wang",
+          "institution": "Russian Academy of Sciences"
         },
         {
           "time": "15:45–16:10",
-          "title": "TBA",
+          "title": "Spectral element method on non-conformal curvilinear meshes: adaptive integration, positive definiteness and applications in geophysics",
           "speaker": "Anatoliy Vershinin",
-          "speaker_id": "anatoliy-vershinin"
+          "speaker_id": "anatoliy-vershinin",
+          "chair": "Shengfa Wang",
+          "institution": "Lomonosov Moscow State University"
         },
         {
           "time": "16:10–16:30",
@@ -165,13 +209,15 @@
         },
         {
           "time": "16:30–17:15",
-          "title": "TBA",
-          "speaker": "David Xianfeng Gu"
+          "title": "Quadrilateral Mesh Generation: Meromorphic Quartic Differentials and Abel–Jacobian Condition",
+          "chair": "Na Lei"
         },
         {
           "time": "17:15–17:40",
-          "title": "TBA",
-          "speaker": "Yiming Zhu"
+          "title": "Curve2Hex: Hexahedral Meshing from Special Surface Quadrangulations via Normal Curves",
+          "speaker": "Yiming Zhu",
+          "chair": "Na Lei",
+          "institution": "Dalian University of Technology"
         },
         {
           "time": "17:40–17:50",
@@ -182,13 +228,16 @@
           "title": "The tempered finite element method — computing with slivers and non watertight hex/tet meshes",
           "speaker": "Jean-François Remacle",
           "speaker_id": "jean-francois-remacle",
-          "online": true
+          "online": true,
+          "chair": "Hang Si",
+          "institution": "Université catholique de Louvain"
         },
         {
           "time": "",
           "title": "Closing Ceremony"
         }
-      ]
+      ],
+      "venue": "Teaching Building A201."
     }
   ]
 }

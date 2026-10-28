@@ -128,7 +128,8 @@
 - id: "jean-francois-remacle"
   photo_path: "/assets/images/speakers/jean-francois-remacle.jpg"
   name: "Jean-François Remacle"
-  institution: "University of Leuven"
+  institution: "Université catholique de Louvain"
+  talk_title: "The tempered finite element method — computing with slivers and non watertight hex/tet meshes"
   profile_url: "https://perso.uclouvain.be/jean-francois.remacle/"
   profile_label: "Homepage"
   biography:
@@ -150,6 +151,7 @@
 
 - id: "anatoliy-vershinin"
   name: "Anatoliy Vershinin"
+  talk_title: "Spectral element method on non-conformal curvilinear meshes: adaptive integration, positive definiteness and applications in geophysics"
   biography: []
   institution: "Lomonosov Moscow State University"
 
